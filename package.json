@@ -1,38 +1,27 @@
 {
-  "name": "project",
-  "version": "1.0.0",
-  "description": "My project",
-  "main": "index.js",
+  "name": "react-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "watch":"jest --watch *.js",
-    "start": "webpack serve --config webpack.config.js",
-    "build": "webpack --config webpack.config.js",
-    "deploy": "npm run build && gh-pages -d dist"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thomassharman/project.git"
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thomassharman/project/issues"
-  },
-  "homepage": "https://github.com/thomassharman/project#readme",
   "devDependencies": {
-    "@babel/core": "^7.27.3",
-    "@babel/preset-env": "^7.27.2",
-    "babel-loader": "^10.0.0",
-    "css-loader": "^7.1.2",
-    "globals": "^16.2.0",
-    "html-webpack-plugin": "^5.6.3",
-    "jest": "^30.0.3",
-    "prettier": "^3.5.3",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.99.9",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "vite": "^7.0.4"
   }
 }
