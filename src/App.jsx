@@ -2,7 +2,10 @@ import Component from "./component.jsx"
 
 function App() {
   return(
-    <Component/>
+    <>
+      <Component/>
+    </>
+   
   )
 }
 
